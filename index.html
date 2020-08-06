@@ -17,6 +17,9 @@
 		<title>Microsoft official Homepage</title>
 	</head>
 	<body>
+		<div class="menu-btn">
+			<i class="fas fa-bars fa-2x"></i>
+		</div>
 		<div class="conatiner">
 			<!--Nav-->
 			<nav class="main-nav">
@@ -29,7 +32,7 @@
 					<li><a href="#">Deals</a></li>
 					<li><a href="#">Support</a></li>
 				</ul>
-				<ul class="right-menue">
+				<ul class="right-menu">
 					<li>
 						<a href="# ">
 							<i class="fas fa-search"></i>
@@ -248,5 +251,12 @@
 				</ul>
 			</div>
 		</footer>
+		<script>
+			document
+				.querySelector('.menu-btn')
+				.addEventListener('click', () =>
+					document.querySelector('.main-menu').classList.toggle('show')
+				);
+		</script>
 	</body>
 </html>
